@@ -750,9 +750,8 @@ Converted["_emptynotice"].Size = UDim2.new(0, 406, 0, 24)
 Converted["_emptynotice"].Name = "emptynotice"
 Converted["_emptynotice"].Parent = Converted["_settingspage"]
 
--- The drag script below was not written by me, i found it on roblox studio's marketplace.
+-- Not made by me, found this on the studio marketplace.
 local UserInputService = game:GetService("UserInputService")
-local runService = (game:GetService("RunService"));
 
 local gui = Converted["_main"]
 
@@ -761,35 +760,17 @@ local dragInput
 local dragStart
 local startPos
 
-function Lerp(a, b, m)
-	return a + (b - a) * m
-end;
-
-local lastMousePos
-local lastGoalPos
-local DRAG_SPEED = (150);
-
-function Update(dt)
-	if not (startPos) then return end;
-	if not (dragging) and (lastGoalPos) then
-		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
-		return 
-	end;
-
-	local delta = (lastMousePos - UserInputService:GetMouseLocation())
-	local xGoal = (startPos.X.Offset - delta.X);
-	local yGoal = (startPos.Y.Offset - delta.Y);
-	lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
-	gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
-end;
+local function update(input)
+	local delta = input.Position - dragStart
+	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
 
 gui.InputBegan:Connect(function(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 		dragging = true
 		dragStart = input.Position
 		startPos = gui.Position
-		lastMousePos = UserInputService:GetMouseLocation()
-
+		
 		input.Changed:Connect(function()
 			if input.UserInputState == Enum.UserInputState.End then
 				dragging = false
@@ -804,7 +785,11 @@ gui.InputChanged:Connect(function(input)
 	end
 end)
 
-runService.Heartbeat:Connect(Update)
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
 
 Converted["_executiontab"].MouseButton1Click:Connect(function()
     Converted["_executiontab"].ImageColor3 = Color3.fromRGB(212,211,212)
