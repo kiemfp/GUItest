@@ -750,45 +750,56 @@ Converted["_emptynotice"].Size = UDim2.new(0, 406, 0, 24)
 Converted["_emptynotice"].Name = "emptynotice"
 Converted["_emptynotice"].Parent = Converted["_settingspage"]
 
--- Not made by me, found this on the studio marketplace.
+
+-- Drag script not made by me, found it on roblox marketplace.
 local UserInputService = game:GetService("UserInputService")
 
-local gui = Converted["_main"]
+local frame = Converted["_main"]
 
-local dragging
-local dragInput
-local dragStart
-local startPos
+local isDragging = false
+local dragStartPos = nil
+local frameStartPos = nil
 
-local function update(input)
-	local delta = input.Position - dragStart
-	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+local function handleInput(input)
+    if isDragging then
+        local delta = input.Position - dragStartPos
+        frame.Position = UDim2.new(
+            frameStartPos.X.Scale, 
+            frameStartPos.X.Offset + delta.X, 
+            frameStartPos.Y.Scale, 
+            frameStartPos.Y.Offset + delta.Y
+        )
+    end
 end
 
-gui.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-		dragging = true
-		dragStart = input.Position
-		startPos = gui.Position
-		
-		input.Changed:Connect(function()
-			if input.UserInputState == Enum.UserInputState.End then
-				dragging = false
-			end
-		end)
-	end
-end)
+local function startDrag(input)
+    isDragging = true
+    dragStartPos = input.Position
+    frameStartPos = frame.Position
+    input.UserInputState = Enum.UserInputState.Begin
+end
 
-gui.InputChanged:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-		dragInput = input
-	end
+local function stopDrag(input)
+    isDragging = false
+    input.UserInputState = Enum.UserInputState.End
+end
+
+frame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        startDrag(input)
+    end
 end)
 
 UserInputService.InputChanged:Connect(function(input)
-	if input == dragInput and dragging then
-		update(input)
-	end
+    if isDragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        handleInput(input)
+    end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        stopDrag(input)
+    end
 end)
 
 Converted["_executiontab"].MouseButton1Click:Connect(function()
@@ -891,9 +902,7 @@ Converted["_clear"].MouseButton1Click:Connect(function()
     end
 end)
 
--- Converted["_executeiy"].MouseButton1Click:Connect(function()
 
--- end)
 
 Converted["_scriptonetab"].MouseButton1Click:Connect(function()
     Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(38, 38, 38)
@@ -941,4 +950,8 @@ game:GetService("UserInputService").InputBegan:Connect(function(k)
     if k.KeyCode == Enum.KeyCode.Q and UserInputService:IsKeyDown(Enum.KeyCode.LeftAlt) then
         Converted["_main"].Visible = not Converted["_main"].Visible
     end
+end)
+
+Converted["_executeiy"].MouseButton1Click:Connect(function()
+
 end)
