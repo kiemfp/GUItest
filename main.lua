@@ -951,3 +951,9 @@ Converted["_scriptthreetab"].MouseButton1Click:Connect(function()
     Converted["_tab2box"].Visible = false
     Converted["_tab3box"].Visible = true
 end)
+
+game:GetService("UserInputService").InputBegan:Connect(function(k)
+    if k.KeyCode == Enum.KeyCode.Q and UserInputService:IsKeyDown(Enum.KeyCode.LeftAlt) then
+        Converted["_main"].Visible = not Converted["_main"].Visible
+    end
+end)
