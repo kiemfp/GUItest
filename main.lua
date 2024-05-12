@@ -845,7 +845,7 @@ Converted["_settingstab"].MouseButton1Click:Connect(function()
 end)
 
 Converted["_execute"].MouseButton1Click:Connect(function()
-    if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         local execute = Converted["_tab1box"].Text
         if execute == "original()" then
             if detectedMode then
@@ -859,7 +859,7 @@ Converted["_execute"].MouseButton1Click:Connect(function()
         end
     end
 
-    if Converted["_scripttwotab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scripttwotab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         local execute = Converted["_tab2box"].Text
         if execute == "original()" then
             if detectedMode then
@@ -873,7 +873,7 @@ Converted["_execute"].MouseButton1Click:Connect(function()
         end
     end
 
-    if Converted["_scriptthreetab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scriptthreetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         local execute = Converted["_tab3box"].Text
         if execute == "original()" then
             if detectedMode then
@@ -889,15 +889,15 @@ Converted["_execute"].MouseButton1Click:Connect(function()
 end)
 
 Converted["_clear"].MouseButton1Click:Connect(function()
-    if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         Converted["_tab1box"].Text = ""
     end
 
-    if Converted["_scripttwotab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scripttwotab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         Converted["_tab2box"].Text = ""
     end
 
-    if Converted["_scriptthreetab"].BackgroundColor3 == Color3.fromRGB(38, 38, 38) then
+    if Converted["_scriptthreetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         Converted["_tab3box"].Text = ""
     end
 end)
@@ -905,7 +905,7 @@ end)
 
 
 Converted["_scriptonetab"].MouseButton1Click:Connect(function()
-    Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+    Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
     Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
     Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
 
@@ -920,7 +920,7 @@ end)
 
 Converted["_scripttwotab"].MouseButton1Click:Connect(function()
     Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(38,38,38)
+    Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
     Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
 
     Converted["_scriptonetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
@@ -935,7 +935,7 @@ end)
 Converted["_scriptthreetab"].MouseButton1Click:Connect(function()
     Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
     Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(38,38,38)
+    Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
 
     Converted["_scriptonetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
     Converted["_scripttwotab"].TextColor3 = Color3.fromRGB(101, 101, 104)
