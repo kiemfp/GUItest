@@ -51,6 +51,9 @@ local Converted = {
 	["_tab1box"] = Instance.new("TextBox");
 	["_tab2box"] = Instance.new("TextBox");
 	["_tab3box"] = Instance.new("TextBox");
+    ["_tab1lines"] = Instance.new("TextLabel");
+	["_tab2lines"] = Instance.new("TextLabel");
+	["_tab3lines"] = Instance.new("TextLabel");
 	["_scriptpage"] = Instance.new("Frame");
 	["_executorstroke1"] = Instance.new("UIStroke");
 	["_executorround1"] = Instance.new("UICorner");
@@ -179,7 +182,8 @@ Converted["_scriptstabselected"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_scriptstabselected"].BorderSizePixel = 0
 Converted["_scriptstabselected"].Position = UDim2.new(0.0599999987, 0, 0.479900002, 0)
 Converted["_scriptstabselected"].Size = UDim2.new(0, 2, 0, 20)
-Converted["_scriptstabselected"].Visible = false
+Converted["_scriptstabselected"].Visible = true
+Converted["_scriptstabselected"].BackgroundTransparency = 1
 Converted["_scriptstabselected"].Name = "scriptstabselected"
 Converted["_scriptstabselected"].Parent = Converted["_sidebar"]
 
@@ -191,7 +195,8 @@ Converted["_optionstabselected"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_optionstabselected"].BorderSizePixel = 0
 Converted["_optionstabselected"].Position = UDim2.new(0.0599999987, 0, 0.612999976, 0)
 Converted["_optionstabselected"].Size = UDim2.new(0, 2, 0, 20)
-Converted["_optionstabselected"].Visible = false
+Converted["_optionstabselected"].Visible = true
+Converted["_optionstabselected"].BackgroundTransparency = 1
 Converted["_optionstabselected"].Name = "optionstabselected"
 Converted["_optionstabselected"].Parent = Converted["_sidebar"]
 
@@ -287,6 +292,8 @@ Converted["_execute"].Position = UDim2.new(0.857894719, 0, 0.889196694, 0)
 Converted["_execute"].Size = UDim2.new(0, 31, 0, 31)
 Converted["_execute"].Name = "execute"
 Converted["_execute"].Parent = Converted["_executorpage"]
+Converted["_execute"].AutoButtonColor = false
+
 
 Converted["_UICorner3"].CornerRadius = UDim.new(0, 7)
 Converted["_UICorner3"].Parent = Converted["_execute"]
@@ -304,6 +311,7 @@ Converted["_clear"].Position = UDim2.new(0.926315784, 0, 0.889196694, 0)
 Converted["_clear"].Size = UDim2.new(0, 31, 0, 31)
 Converted["_clear"].Name = "clear"
 Converted["_clear"].Parent = Converted["_executorpage"]
+Converted["_clear"].AutoButtonColor = false
 
 Converted["_UICorner4"].CornerRadius = UDim.new(0, 7)
 Converted["_UICorner4"].Parent = Converted["_clear"]
@@ -339,6 +347,7 @@ Converted["_scriptonetab"].Position = UDim2.new(0.0192982461, 0, 0.176470593, 0)
 Converted["_scriptonetab"].Size = UDim2.new(0, 68, 0, 23)
 Converted["_scriptonetab"].Name = "scriptonetab"
 Converted["_scriptonetab"].Parent = Converted["_tabs"]
+Converted["_scriptonetab"].AutoButtonColor = false
 
 Converted["_UICorner5"].CornerRadius = UDim.new(0, 15)
 Converted["_UICorner5"].Parent = Converted["_scriptonetab"]
@@ -354,6 +363,7 @@ Converted["_scripttwotab"].Position = UDim2.new(0.150877193, 0, 0.176470593, 0)
 Converted["_scripttwotab"].Size = UDim2.new(0, 68, 0, 23)
 Converted["_scripttwotab"].Name = "scripttwotab"
 Converted["_scripttwotab"].Parent = Converted["_tabs"]
+Converted["_scripttwotab"].AutoButtonColor = false
 
 Converted["_UICorner6"].CornerRadius = UDim.new(0, 15)
 Converted["_UICorner6"].Parent = Converted["_scripttwotab"]
@@ -369,6 +379,7 @@ Converted["_scriptthreetab"].Position = UDim2.new(0.28245613, 0, 0.176470593, 0)
 Converted["_scriptthreetab"].Size = UDim2.new(0, 68, 0, 23)
 Converted["_scriptthreetab"].Name = "scriptthreetab"
 Converted["_scriptthreetab"].Parent = Converted["_tabs"]
+Converted["_scriptthreetab"].AutoButtonColor = false
 
 Converted["_UICorner7"].CornerRadius = UDim.new(0, 15)
 Converted["_UICorner7"].Parent = Converted["_scriptthreetab"]
@@ -387,13 +398,12 @@ Converted["_textboxscrolling"].Name = "textboxscrolling"
 Converted["_textboxscrolling"].Parent = Converted["_executorpage"]
 
 Converted["_tab1box"].ClearTextOnFocus = false
-Converted["_tab1box"].CursorPosition = -1
 Converted["_tab1box"].Font = Enum.Font.Gotham
 Converted["_tab1box"].MultiLine = true
 Converted["_tab1box"].PlaceholderColor3 = Color3.fromRGB(84.00000259280205, 85.0000025331974, 91.00000217556953)
 Converted["_tab1box"].PlaceholderText = "-- Welcome to Incognito. Be careful executing unknown scripts there are vulns!"
 Converted["_tab1box"].RichText = true
-Converted["_tab1box"].Text = ""
+Converted["_tab1box"].Text = "ffdsfdfsdfdsfsdfsdfdfdsfsdfsdfdsfds"
 Converted["_tab1box"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
 Converted["_tab1box"].TextSize = 14
 Converted["_tab1box"].TextXAlignment = Enum.TextXAlignment.Left
@@ -401,8 +411,8 @@ Converted["_tab1box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab1box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
 Converted["_tab1box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_tab1box"].BorderSizePixel = 0
-Converted["_tab1box"].Position = UDim2.new(0.0192982461, 0, 0, 0)
-Converted["_tab1box"].Size = UDim2.new(0, 559, 0, 18040)
+Converted["_tab1box"].Position = UDim2.new(0.0689999983, 0, 0, 0)
+Converted["_tab1box"].Size = UDim2.new(0, 525, 0, 18040)
 Converted["_tab1box"].Name = "tab1box"
 Converted["_tab1box"].Parent = Converted["_textboxscrolling"]
 
@@ -420,8 +430,8 @@ Converted["_tab2box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab2box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
 Converted["_tab2box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_tab2box"].BorderSizePixel = 0
-Converted["_tab2box"].Position = UDim2.new(0.0192982461, 0, 0, 0)
-Converted["_tab2box"].Size = UDim2.new(0, 559, 0, 18040)
+Converted["_tab2box"].Position = UDim2.new(0.0689999983, 0, 0, 0)
+Converted["_tab2box"].Size = UDim2.new(0, 525, 0, 18040)
 Converted["_tab2box"].Visible = false
 Converted["_tab2box"].Name = "tab2box"
 Converted["_tab2box"].Parent = Converted["_textboxscrolling"]
@@ -440,11 +450,58 @@ Converted["_tab3box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab3box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
 Converted["_tab3box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_tab3box"].BorderSizePixel = 0
-Converted["_tab3box"].Position = UDim2.new(0.0192982461, 0, 0, 0)
-Converted["_tab3box"].Size = UDim2.new(0, 559, 0, 18040)
+Converted["_tab3box"].Position = UDim2.new(0.0689999983, 0, 0, 0)
+Converted["_tab3box"].Size = UDim2.new(0, 525, 0, 18040)
 Converted["_tab3box"].Visible = false
 Converted["_tab3box"].Name = "tab3box"
 Converted["_tab3box"].Parent = Converted["_textboxscrolling"]
+
+Converted["_tab1lines"].Font = Enum.Font.Gotham
+Converted["_tab1lines"].Text = "1"
+Converted["_tab1lines"].TextColor3 = Color3.fromRGB(156.00000590085983, 156.00000590085983, 156.00000590085983)
+Converted["_tab1lines"].TextSize = 14
+Converted["_tab1lines"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab1lines"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab1lines"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab1lines"].BackgroundTransparency = 1
+Converted["_tab1lines"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab1lines"].BorderSizePixel = 0
+Converted["_tab1lines"].Position = UDim2.new(0.0192982461, 0, 0, 0)
+Converted["_tab1lines"].Size = UDim2.new(0, 28, 0, 18040)
+Converted["_tab1lines"].Name = "tab1lines"
+Converted["_tab1lines"].Parent = Converted["_textboxscrolling"]
+
+Converted["_tab2lines"].Font = Enum.Font.Gotham
+Converted["_tab2lines"].Text = "1"
+Converted["_tab2lines"].TextColor3 = Color3.fromRGB(156.00000590085983, 156.00000590085983, 156.00000590085983)
+Converted["_tab2lines"].TextSize = 14
+Converted["_tab2lines"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab2lines"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab2lines"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab2lines"].BackgroundTransparency = 1
+Converted["_tab2lines"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab2lines"].BorderSizePixel = 0
+Converted["_tab2lines"].Position = UDim2.new(0.0192982461, 0, 0, 0)
+Converted["_tab2lines"].Size = UDim2.new(0, 28, 0, 18040)
+Converted["_tab2lines"].Visible = false
+Converted["_tab2lines"].Name = "tab2lines"
+Converted["_tab2lines"].Parent = Converted["_textboxscrolling"]
+
+Converted["_tab3lines"].Font = Enum.Font.Gotham
+Converted["_tab3lines"].Text = "1"
+Converted["_tab3lines"].TextColor3 = Color3.fromRGB(156.00000590085983, 156.00000590085983, 156.00000590085983)
+Converted["_tab3lines"].TextSize = 14
+Converted["_tab3lines"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab3lines"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab3lines"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_tab3lines"].BackgroundTransparency = 1
+Converted["_tab3lines"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab3lines"].BorderSizePixel = 0
+Converted["_tab3lines"].Position = UDim2.new(0.0192982461, 0, 0, 0)
+Converted["_tab3lines"].Size = UDim2.new(0, 28, 0, 18040)
+Converted["_tab3lines"].Visible = false
+Converted["_tab3lines"].Name = "tab3lines"
+Converted["_tab3lines"].Parent = Converted["_textboxscrolling"]
 
 Converted["_scriptpage"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
 Converted["_scriptpage"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -750,6 +807,34 @@ Converted["_emptynotice"].Size = UDim2.new(0, 406, 0, 24)
 Converted["_emptynotice"].Name = "emptynotice"
 Converted["_emptynotice"].Parent = Converted["_settingspage"]
 
+local ripple = Instance.new("Frame")
+ripple.BackgroundColor3 = Color3.fromRGB(194, 194, 194)
+ripple.BackgroundTransparency = 1
+ripple.Size = UDim2.new(0, 0, 0, 0)
+ripple.Position = UDim2.new(0.5, 0, 0.5, 0)
+ripple.AnchorPoint = Vector2.new(0.5, 0.5)
+ripple.ZIndex = 10
+ripple.BorderSizePixel = 0
+ripple.Parent = Converted["_execute"]
+
+local rippleRound = Instance.new("UICorner")
+rippleRound.CornerRadius = UDim.new(0, 7)
+rippleRound.Parent = ripple
+
+local ripple2 = Instance.new("Frame")
+ripple2.BackgroundColor3 = Color3.fromRGB(194, 194, 194)
+ripple2.BackgroundTransparency = 1
+ripple2.Size = UDim2.new(0, 0, 0, 0)
+ripple2.Position = UDim2.new(0.5, 0, 0.5, 0)
+ripple2.AnchorPoint = Vector2.new(0.5, 0.5)
+ripple2.ZIndex = 10
+ripple2.BorderSizePixel = 0
+ripple2.Parent = Converted["_clear"]
+
+local rippleRound2 = Instance.new("UICorner")
+rippleRound2.CornerRadius = UDim.new(0, 7)
+rippleRound2.Parent = ripple2
+
 
 -- Drag script not made by me, found it on roblox marketplace.
 local UserInputService = game:GetService("UserInputService")
@@ -803,48 +888,71 @@ UserInputService.InputEnded:Connect(function(input)
 end)
 
 Converted["_executiontab"].MouseButton1Click:Connect(function()
-    Converted["_executiontab"].ImageColor3 = Color3.fromRGB(212,211,212)
-    Converted["_scripthubtab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_settingstab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
+    game:GetService("TweenService"):Create(Converted["_executiontab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(212, 211, 212)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripthubtab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_settingstab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
 
-    Converted["_executortabselected"].Visible = true
-    Converted["_optionstabselected"].Visible = false
-    Converted["_scriptstabselected"].Visible = false
+    -- Converted["_executortabselected"].BackgroundTransparency = 0
+    Converted["_optionstabselected"].BackgroundTransparency = 1
+    Converted["_scriptstabselected"].BackgroundTransparency = 1
 
     Converted["_executorpage"].Visible = true
     Converted["_scriptpage"].Visible = false
     Converted["_settingspage"].Visible = false
+
+    for i = 1, 0, -0.25 do
+        task.wait(0.02)
+        Converted["_executortabselected"].BackgroundTransparency = i
+    end
 end)
 
 Converted["_scripthubtab"].MouseButton1Click:Connect(function()
-    Converted["_executiontab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scripthubtab"].ImageColor3 = Color3.fromRGB(212,211,212)
-    Converted["_settingstab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
+    game:GetService("TweenService"):Create(Converted["_executiontab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripthubtab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(212, 211, 212)}):Play()
+    game:GetService("TweenService"):Create(Converted["_settingstab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
 
-    Converted["_executortabselected"].Visible = false
-    Converted["_optionstabselected"].Visible = false
-    Converted["_scriptstabselected"].Visible = true
+    Converted["_executortabselected"].BackgroundTransparency = 1
+    Converted["_optionstabselected"].BackgroundTransparency = 1
 
     Converted["_executorpage"].Visible = false
     Converted["_scriptpage"].Visible = true
     Converted["_settingspage"].Visible = false
+
+    for i = 1, 0, -0.25 do
+        task.wait(0.02)
+        Converted["_scriptstabselected"].BackgroundTransparency = i
+    end
 end)
 
 Converted["_settingstab"].MouseButton1Click:Connect(function()
-    Converted["_executiontab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scripthubtab"].ImageColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_settingstab"].ImageColor3 = Color3.fromRGB(212,211,212)
+    game:GetService("TweenService"):Create(Converted["_executiontab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripthubtab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_settingstab"], TweenInfo.new(0.3), {ImageColor3 = Color3.fromRGB(212, 211, 212)}):Play()
 
-    Converted["_executortabselected"].Visible = false
-    Converted["_optionstabselected"].Visible = true
-    Converted["_scriptstabselected"].Visible = false
+    Converted["_executortabselected"].BackgroundTransparency = 1
+    Converted["_scriptstabselected"].BackgroundTransparency = 1
 
     Converted["_executorpage"].Visible = false
     Converted["_scriptpage"].Visible = false
     Converted["_settingspage"].Visible = true
+
+    for i = 1, 0, -0.25 do
+        task.wait(0.02)
+        Converted["_optionstabselected"].BackgroundTransparency = i
+    end
 end)
 
+
 Converted["_execute"].MouseButton1Click:Connect(function()
+    ripple.Size = UDim2.new(0, 0, 0, 0)
+    ripple.BackgroundTransparency = 0.6
+
+    local size = game:GetService("TweenService"):Create(ripple, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(1, 0, 1, 0)})
+    local trans = game:GetService("TweenService"):Create(ripple, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1})
+
+    size:Play()
+    trans:Play()
+
     if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         local execute = Converted["_tab1box"].Text
         if execute == "original()" then
@@ -889,6 +997,15 @@ Converted["_execute"].MouseButton1Click:Connect(function()
 end)
 
 Converted["_clear"].MouseButton1Click:Connect(function()
+    ripple2.Size = UDim2.new(0, 0, 0, 0)
+    ripple2.BackgroundTransparency = 0.6
+
+    local size = game:GetService("TweenService"):Create(ripple2, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(1, 0, 1, 0)})
+    local trans = game:GetService("TweenService"):Create(ripple2, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {BackgroundTransparency = 1})
+
+    size:Play()
+    trans:Play()
+
     if Converted["_scriptonetab"].BackgroundColor3 == Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155) then
         Converted["_tab1box"].Text = ""
     end
@@ -902,49 +1019,60 @@ Converted["_clear"].MouseButton1Click:Connect(function()
     end
 end)
 
-
-
 Converted["_scriptonetab"].MouseButton1Click:Connect(function()
-    Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
-    Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(38, 38, 48)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
 
-    Converted["_scriptonetab"].TextColor3 = Color3.fromRGB(212, 211, 212)
-    Converted["_scripttwotab"].TextColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scriptthreetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(212, 211, 212)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
 
     Converted["_tab1box"].Visible = true
     Converted["_tab2box"].Visible = false
     Converted["_tab3box"].Visible = false
+
+    Converted["_tab1lines"].Visible = true
+    Converted["_tab2lines"].Visible = false
+    Converted["_tab3lines"].Visible = false
 end)
 
 Converted["_scripttwotab"].MouseButton1Click:Connect(function()
-    Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
-    Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(38, 38, 48)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
 
-    Converted["_scriptonetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scripttwotab"].TextColor3 = Color3.fromRGB(212, 211, 212)
-    Converted["_scriptthreetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(212, 211, 212)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
 
     Converted["_tab1box"].Visible = false
     Converted["_tab2box"].Visible = true
     Converted["_tab3box"].Visible = false
+
+    Converted["_tab1lines"].Visible = false
+    Converted["_tab2lines"].Visible = true
+    Converted["_tab3lines"].Visible = false
 end)
 
 Converted["_scriptthreetab"].MouseButton1Click:Connect(function()
-    Converted["_scriptonetab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scripttwotab"].BackgroundColor3 = Color3.fromRGB(24, 24, 30)
-    Converted["_scriptthreetab"].BackgroundColor3 = Color3.fromRGB(38.0000015348196, 38.0000015348196, 48.000000938773155)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(38, 38, 48)}):Play()
 
-    Converted["_scriptonetab"].TextColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scripttwotab"].TextColor3 = Color3.fromRGB(101, 101, 104)
-    Converted["_scriptthreetab"].TextColor3 = Color3.fromRGB(212, 211, 212)
+    game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(101, 101, 104)}):Play()
+    game:GetService("TweenService"):Create(Converted["_scriptthreetab"], TweenInfo.new(0.2), {TextColor3 = Color3.fromRGB(212, 211, 212)}):Play()
 
     Converted["_tab1box"].Visible = false
     Converted["_tab2box"].Visible = false
     Converted["_tab3box"].Visible = true
+
+    Converted["_tab1lines"].Visible = false
+    Converted["_tab2lines"].Visible = false
+    Converted["_tab3lines"].Visible = true
 end)
+
 
 game:GetService("UserInputService").InputBegan:Connect(function(k)
     if k.KeyCode == Enum.KeyCode.Q and UserInputService:IsKeyDown(Enum.KeyCode.LeftAlt) then
@@ -952,6 +1080,32 @@ game:GetService("UserInputService").InputBegan:Connect(function(k)
     end
 end)
 
-Converted["_executeiy"].MouseButton1Click:Connect(function()
+function update(box, line)
+    local lines = box.Text:split("\n")
+    local lineNums = ""
+    local maxDigits = #tostring(#lines)
 
-end)
+    for i = 1, #lines do
+        local paddedNum = string.format("%" .. maxDigits .. "d", i)
+        lineNums = lineNums .. paddedNum .. ": " .. "\n"
+    end
+
+    line.Text = lineNums
+end
+
+function init(box, line)
+    box:GetPropertyChangedSignal("Text"):Connect(function()
+        update(box, line)
+    end)
+end
+
+update(Converted["_tab1box"], Converted["_tab1lines"])
+init(Converted["_tab1box"], Converted["_tab1lines"])
+
+update(Converted["_tab2box"], Converted["_tab2lines"])
+init(Converted["_tab2box"], Converted["_tab2lines"])
+
+update(Converted["_tab3box"], Converted["_tab3lines"])
+init(Converted["_tab3box"], Converted["_tab3lines"])
+
+
