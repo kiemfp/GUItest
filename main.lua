@@ -1087,7 +1087,7 @@ function update(box, line)
 
     for i = 1, #lines do
         local paddedNum = string.format("%" .. maxDigits .. "d", i)
-        lineNums = lineNums .. paddedNum .. ": " .. "\n"
+        lineNums = lineNums .. paddedNum .. " " .. "\n"
     end
 
     line.Text = lineNums
