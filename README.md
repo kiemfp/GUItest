@@ -5,4 +5,4 @@ Execute the main.lua script with the Incognito executor.
 
 
 ## Known issues <br/>
-Ui dissapears when on a laptop.
+Ui dissapears when on a laptop. (Issue has been fixed.)
