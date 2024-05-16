@@ -49,8 +49,11 @@ local Converted = {
 	["_UICorner7"] = Instance.new("UICorner");
     ["_textboxscrolling"] = Instance.new("ScrollingFrame");
 	["_tab1box"] = Instance.new("TextBox");
+	["_tab1maineditor"] = Instance.new("TextLabel");
 	["_tab2box"] = Instance.new("TextBox");
+	["_tab2maineditor"] = Instance.new("TextLabel");
 	["_tab3box"] = Instance.new("TextBox");
+	["_tab3maineditor"] = Instance.new("TextLabel");
     ["_tab1lines"] = Instance.new("TextLabel");
 	["_tab2lines"] = Instance.new("TextLabel");
 	["_tab3lines"] = Instance.new("TextLabel");
@@ -403,9 +406,10 @@ Converted["_tab1box"].MultiLine = true
 Converted["_tab1box"].PlaceholderColor3 = Color3.fromRGB(84.00000259280205, 85.0000025331974, 91.00000217556953)
 Converted["_tab1box"].PlaceholderText = "-- Welcome to Incognito. Be careful executing unknown scripts there are vulns!"
 Converted["_tab1box"].RichText = true
-Converted["_tab1box"].Text = "ffdsfdfsdfdsfsdfsdfdfdsfsdfsdfdsfds"
+Converted["_tab1box"].Text = ""
 Converted["_tab1box"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
 Converted["_tab1box"].TextSize = 14
+Converted["_tab1box"].TextTransparency = 0.9900000095367432
 Converted["_tab1box"].TextXAlignment = Enum.TextXAlignment.Left
 Converted["_tab1box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab1box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
@@ -416,6 +420,20 @@ Converted["_tab1box"].Size = UDim2.new(0, 525, 0, 18040)
 Converted["_tab1box"].Name = "tab1box"
 Converted["_tab1box"].Parent = Converted["_textboxscrolling"]
 
+Converted["_tab1maineditor"].Font = Enum.Font.Gotham
+Converted["_tab1maineditor"].Text = ""
+Converted["_tab1maineditor"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
+Converted["_tab1maineditor"].TextSize = 14
+Converted["_tab1maineditor"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab1maineditor"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab1maineditor"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
+Converted["_tab1maineditor"].BackgroundTransparency = 0.9900000095367432
+Converted["_tab1maineditor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab1maineditor"].BorderSizePixel = 0
+Converted["_tab1maineditor"].Size = UDim2.new(0, 525, 0, 18040)
+Converted["_tab1maineditor"].Name = "tab1maineditor"
+Converted["_tab1maineditor"].Parent = Converted["_tab1box"]
+
 Converted["_tab2box"].ClearTextOnFocus = false
 Converted["_tab2box"].Font = Enum.Font.Gotham
 Converted["_tab2box"].MultiLine = true
@@ -425,6 +443,7 @@ Converted["_tab2box"].RichText = true
 Converted["_tab2box"].Text = ""
 Converted["_tab2box"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
 Converted["_tab2box"].TextSize = 14
+Converted["_tab2box"].TextTransparency = 0.9900000095367432
 Converted["_tab2box"].TextXAlignment = Enum.TextXAlignment.Left
 Converted["_tab2box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab2box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
@@ -436,6 +455,21 @@ Converted["_tab2box"].Visible = false
 Converted["_tab2box"].Name = "tab2box"
 Converted["_tab2box"].Parent = Converted["_textboxscrolling"]
 
+Converted["_tab2maineditor"].Font = Enum.Font.Gotham
+Converted["_tab2maineditor"].Text = ""
+Converted["_tab2maineditor"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
+Converted["_tab2maineditor"].TextSize = 14
+Converted["_tab2maineditor"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab2maineditor"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab2maineditor"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
+Converted["_tab2maineditor"].BackgroundTransparency = 0.9900000095367432
+Converted["_tab2maineditor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab2maineditor"].BorderSizePixel = 0
+Converted["_tab2maineditor"].Size = UDim2.new(0, 525, 0, 18040)
+Converted["_tab2maineditor"].Visible = false
+Converted["_tab2maineditor"].Name = "tab2maineditor"
+Converted["_tab2maineditor"].Parent = Converted["_tab2box"]
+
 Converted["_tab3box"].ClearTextOnFocus = false
 Converted["_tab3box"].Font = Enum.Font.Gotham
 Converted["_tab3box"].MultiLine = true
@@ -445,6 +479,7 @@ Converted["_tab3box"].RichText = true
 Converted["_tab3box"].Text = ""
 Converted["_tab3box"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
 Converted["_tab3box"].TextSize = 14
+Converted["_tab3box"].TextTransparency = 0.9900000095367432
 Converted["_tab3box"].TextXAlignment = Enum.TextXAlignment.Left
 Converted["_tab3box"].TextYAlignment = Enum.TextYAlignment.Top
 Converted["_tab3box"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
@@ -452,9 +487,26 @@ Converted["_tab3box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_tab3box"].BorderSizePixel = 0
 Converted["_tab3box"].Position = UDim2.new(0.0689999983, 0, 0, 0)
 Converted["_tab3box"].Size = UDim2.new(0, 525, 0, 18040)
-Converted["_tab3box"].Visible = false
 Converted["_tab3box"].Name = "tab3box"
 Converted["_tab3box"].Parent = Converted["_textboxscrolling"]
+Converted["_tab3box"].Visible = false
+
+Converted["_tab3maineditor"].Font = Enum.Font.Gotham
+Converted["_tab3maineditor"].Text = ""
+Converted["_tab3maineditor"].TextColor3 = Color3.fromRGB(212.00000256299973, 211.00000262260437, 212.00000256299973)
+Converted["_tab3maineditor"].TextSize = 14
+Converted["_tab3maineditor"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_tab3maineditor"].TextYAlignment = Enum.TextYAlignment.Top
+Converted["_tab3maineditor"].BackgroundColor3 = Color3.fromRGB(24.000000469386578, 24.000000469386578, 30.00000011175871)
+Converted["_tab3maineditor"].BackgroundTransparency = 0.9900000095367432
+Converted["_tab3maineditor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_tab3maineditor"].BorderSizePixel = 0
+Converted["_tab3maineditor"].Size = UDim2.new(0, 525, 0, 18040)
+Converted["_tab3maineditor"].Name = "tab3maineditor"
+Converted["_tab3maineditor"].Parent = Converted["_tab3box"]
+Converted["_tab3maineditor"].Visible = false
+
+
 
 Converted["_tab1lines"].Font = Enum.Font.Gotham
 Converted["_tab1lines"].Text = "1"
@@ -1019,6 +1071,57 @@ Converted["_clear"].MouseButton1Click:Connect(function()
     end
 end)
 
+function initCursor(textbox)
+    local cursor = Instance.new("TextLabel")
+    cursor.Name = "Cursor"
+    cursor.BackgroundTransparency = 0
+    cursor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    cursor.Size = UDim2.new(0, 1, 0, 16)
+    cursor.Position = UDim2.new(0, 0, 0, 0)
+    cursor.ZIndex = textbox.ZIndex + 1
+    cursor.Parent = textbox
+    cursor.Text = ""
+    cursor.BorderSizePixel = 0
+    cursor.Visible = false
+
+    local function updateCursorPos()
+        local text = textbox.Text
+        local font = textbox.Font
+        local textSize = textbox.TextSize
+        local cursorPos = textbox.CursorPosition
+        if cursorPos == -1 then return end
+
+        local prefix = text:sub(1, cursorPos - 1)
+        local lines = string.split(prefix, "\n")
+        local currentLine = lines[#lines]
+        local xOffset = game:GetService("TextService"):GetTextSize(currentLine, textSize, font, Vector2.new(math.huge, math.huge)).X
+        local yOffset = (#lines - 1) * textSize
+
+        local tweenInfo = TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+        local tween = game:GetService("TweenService"):Create(cursor, tweenInfo, { Position = UDim2.new(0, xOffset, 0, yOffset) })
+        tween:Play()
+    end
+
+    textbox:GetPropertyChangedSignal("Text"):Connect(function()
+        updateCursorPos()
+    end)
+
+    textbox:GetPropertyChangedSignal("CursorPosition"):Connect(updateCursorPos)
+
+    textbox.Focused:Connect(function()
+        cursor.Visible = true
+        updateCursorPos()
+    end)
+
+    textbox.FocusLost:Connect(function()
+        cursor.Visible = false
+    end)
+end
+
+initCursor(Converted["_tab1box"])
+initCursor(Converted["_tab2box"])
+initCursor(Converted["_tab3box"])
+
 Converted["_scriptonetab"].MouseButton1Click:Connect(function()
     game:GetService("TweenService"):Create(Converted["_scriptonetab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(38, 38, 48)}):Play()
     game:GetService("TweenService"):Create(Converted["_scripttwotab"], TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(24, 24, 30)}):Play()
@@ -1035,6 +1138,10 @@ Converted["_scriptonetab"].MouseButton1Click:Connect(function()
     Converted["_tab1lines"].Visible = true
     Converted["_tab2lines"].Visible = false
     Converted["_tab3lines"].Visible = false
+
+    Converted["_tab1maineditor"].Visible = true
+    Converted["_tab2maineditor"].Visible = false
+    Converted["_tab3maineditor"].Visible = false
 end)
 
 Converted["_scripttwotab"].MouseButton1Click:Connect(function()
@@ -1053,6 +1160,10 @@ Converted["_scripttwotab"].MouseButton1Click:Connect(function()
     Converted["_tab1lines"].Visible = false
     Converted["_tab2lines"].Visible = true
     Converted["_tab3lines"].Visible = false
+
+    Converted["_tab1maineditor"].Visible = false
+    Converted["_tab2maineditor"].Visible = true
+    Converted["_tab3maineditor"].Visible = false
 end)
 
 Converted["_scriptthreetab"].MouseButton1Click:Connect(function()
@@ -1071,6 +1182,10 @@ Converted["_scriptthreetab"].MouseButton1Click:Connect(function()
     Converted["_tab1lines"].Visible = false
     Converted["_tab2lines"].Visible = false
     Converted["_tab3lines"].Visible = true
+
+    Converted["_tab1maineditor"].Visible = false
+    Converted["_tab2maineditor"].Visible = false
+    Converted["_tab3maineditor"].Visible = true
 end)
 
 
@@ -1078,6 +1193,16 @@ game:GetService("UserInputService").InputBegan:Connect(function(k)
     if k.KeyCode == Enum.KeyCode.Q and UserInputService:IsKeyDown(Enum.KeyCode.LeftAlt) then
         Converted["_main"].Visible = not Converted["_main"].Visible
     end
+end)
+
+Converted["_tab1box"]:GetPropertyChangedSignal("Text"):Connect(function()
+    Converted["_tab1maineditor"].Text = Converted["_tab1box"].Text
+end)
+Converted["_tab2box"]:GetPropertyChangedSignal("Text"):Connect(function()
+    Converted["_tab2maineditor"].Text = Converted["_tab2box"].Text
+end)
+Converted["_tab3box"]:GetPropertyChangedSignal("Text"):Connect(function()
+    Converted["_tab3maineditor"].Text = Converted["_tab3box"].Text
 end)
 
 function update(box, line)
