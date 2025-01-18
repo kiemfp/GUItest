@@ -1,6 +1,9 @@
 -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
 -- Instances:
+dsdj = Instance.new("Folder", game.CoreGui)
+dsdj.Name = "incognito"
+
 local detectedMode = false
 if detectedMode then
     game.CoreGui.incognito.Parent = game.Workspace -- super detected, change b4 rel
@@ -953,5 +956,13 @@ game:GetService("UserInputService").InputBegan:Connect(function(k)
 end)
 
 Converted["_executeiy"].MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
+Converted["_executedex"].MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
+
+Converted["_executeremotespy"].MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
 end)
