@@ -106,6 +106,7 @@ Converted["_main"].Position = UDim2.new(0.140895635, 0, 0.255583137, 0)
 Converted["_main"].Size = UDim2.new(0, 681, 0, 394)
 Converted["_main"].Name = "main"
 Converted["_main"].Parent = Converted["_incognito"]
+Converted["_main"].Visible = false
 
 Converted["_mainround"].CornerRadius = UDim.new(0, 18)
 Converted["_mainround"].Name = "mainround"
