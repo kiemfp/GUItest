@@ -1,9 +1,5 @@
 -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-if getgenv().GUIEXEGU484SJDJ933 then
-    return
-end
 
-getgenv().GUIEXEGU484SJDJ933 = true
 task.spawn(function()
 	rconsolecreate()
 	rconsoleprint("Alt+Q to open ingame gui.")
