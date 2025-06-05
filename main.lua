@@ -1,11 +1,7 @@
 -- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
 
-task.spawn(function()
-	rconsolecreate()
-	rconsoleprint("Alt+Q to open ingame gui.")
-	task.wait(7.5)
-	rconsoledestroy()
-end
+
+
 -- Instances:
 dsdj = Instance.new("Folder", game.CoreGui)
 dsdj.Name = "incognito"
